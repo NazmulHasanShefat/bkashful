@@ -1,0 +1,915 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --bkash-defold-color:#E2136E;
+    --background-image: linear-gradient(rgb(255, 232, 243), rgb(255, 234, 247));
+}
+.main-bkash-logo{
+    height:33px;
+    width:90px;
+    margin-left:70px;
+}
+
+
+//START NAVBAR 
+.navbar-wraper{
+    background-color: #E2136E;
+}
+//this is for maga menu
+.dropdown-menu ul{
+    list-style:none;
+    padding:10px;
+}
+.dropdown-menu ul{
+    margin:20px 30px;
+}
+.dropdown-menu.show{
+    display:flex;
+ }
+.dropdown-menu li:first-child a{
+   font-weight:bold;
+   font-size:1rem;
+}
+@media screen and (min-width:968px) {
+        .dropdown:hover .dropdown-menu{
+            display: flex;
+            justify-content:space-evenly;
+            width: 100%;
+            left:0;
+    }
+}
+@media screen and (max-width:678px) {
+    .dropdown:hover .dropdown-menu{
+        flex-direction:column;
+        width: 100%;
+        max-height: 80vh;
+        overflow-y:scroll;
+        flex-direction: column;
+}
+//end mega manu responsib
+//this is mega menu icons
+}
+.dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: #ddddddd0;
+}
+.icon-image{
+    height: 30px;
+    width: 30px;
+}
+// this is adjust nav links or images
+.dropdown-menu li{
+    display:flex;
+}
+.nav-item{
+    margin:0 20px;
+}
+//end all of mega menu
+//this is for manu links
+.language-chenge{
+    display:flex;
+    margin-left:23px;
+}
+.app-buttons{
+    display: flex;
+    margin-right:5px;
+}
+.nav-link{
+    color:#fff;
+    border:1px solid transparent;
+    border-radius:20px;
+}
+.nav-link:hover{
+    color:#fff;
+    border:1px solid #fff;
+}
+//this is for language buttons
+.language-btn{
+    text-decoration:none;
+    color:#fff;
+}
+.bkash-app-btn{
+    padding:4px 32px;
+    border-radius:15px;
+    background-color:#E2136E;
+    color:#fff;
+    border:2px solid #fff;
+    outline:none;
+    transition:.5s;
+}
+.bkash-app-btn:hover{
+   background-color: #fff;
+   color:#E2136E;
+}
+@media screen and (max-width:578px) {
+    .app-buttons{
+        display:none;
+    }
+}
+@media screen and (max-width:768px) {
+    .navbar-brand{
+      margin-left:-64px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+//end of full navbar
+//this is hero section
+// this is for carosel indicators
+.hero .carousel-indicators button{
+    height:25px;
+    width: 25px;
+    border-radius:50%;
+    background-color:var(--bkash-defold-color);
+}
+.hero .carousel-indicators{
+   top:100%; 
+}
+.main-cards{
+    width: 250px;
+    height:400px;
+    margin:0 40px;
+    transition:.5s;
+    margin-top: 20px;
+    border:none;
+    outline:none;
+}
+.main-boxes{
+    width: 100%;
+}
+.main-4-boxes-container{
+    margin-top:100px;
+    height: 700px;
+    background-image: linear-gradient(rgb(255, 232, 243), rgb(255, 234, 247));
+}
+.main-cards:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .card-title{
+        color:#E2136E;
+    }
+}
+.card-title{
+   transition:.5s;
+   margin-top:20px;
+}
+.janun{
+    text-decoration:none;
+    font-size:1rem;
+    transition:.5s;
+    color:#E2136E;
+}
+.box-image{
+    height:170px;
+    width:150px;
+    margin-left:47px;
+}
+@media screen and (max-width:568px) {
+    .main-cards{
+        width: 110px;
+        height:130px;
+        margin-left:48px;
+    }
+    .card-text{
+        display:none;
+    }
+    .box-image{
+        height:50px;
+        width:50px;
+        margin-left:31px;
+    }
+    .card-title{
+        font-size:.7rem;
+        margin-top:13px;
+    }
+    .janun{
+        font-size:.7rem;
+    }
+    .card-body{
+        line-height: -1;
+    }
+    .box-1{
+        margin-left:0;
+        
+    }
+    .main-boxes{
+        width: 100%;
+    }
+}
+// end 4 boxes end of all
+// start horizontal line
+.horizontal-line{
+    margin-toP:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.Arojanun-titel{
+    display:grid;
+    grid-template-columns:repeat(3, 3fr) ;
+    column-gap:3rem;
+    justify-content:center;
+    align-items: center;
+    font-weight:bold;
+}
+.Arojanun-titel::before, .Arojanun-titel::after{
+    content:"";
+    height:2px;
+    background-color: rgba(0, 0, 0, 0.137);
+    display:block;
+}
+@media screen and (max-width:658px) {
+    .Arojanun-titel::before, .Arojanun-titel::after{
+       display:none;
+    }
+    .Arojanun-titel{
+       display: block;
+       text-align:center;
+       font-size:.8rem;
+    }
+    .swiper-wrapper{
+        margin-left:20px;
+    }
+    .slis-text{
+        font-size:.8rem;
+        margin-left:8px;
+    }
+}
+// end horizontal line all
+// this is black banar
+.black-poster-container{
+    height:600px;
+    width:100%;
+    background-image: url("static-banner.webp");
+    background-size:cover ;
+    display:flex;
+    justify-content:center;
+}
+.banar-text-1{
+    color:#E2136E;
+    font-weight:bold;
+}
+.banar-text-2{
+    color:#ffffff;
+    font-weight:bold;
+    font-size:.8rem;
+    margin-top:25px;
+}
+.ios-app{
+    width:150px;
+    height: 50px;
+    margin-right:140px;
+}
+.play-app{
+    height:50px;
+    width:150px;
+    margin-right:20px;
+}
+.mobile-banar{
+    margin-top:70px;
+    margin-right:120px;
+}
+.app-textaria{
+    margin-top:280px;
+    margin-right:100px;
+}
+.app-dounlode-text-container{
+    width: 50%;
+}
+@media screen and (max-width:558px) {
+    .black-poster-container{
+       flex-direction: column;
+    }
+    .app-dounlode-text-container{
+        width: 100%;
+    }
+    .mobile-banar{
+       height: 200px;
+       width: 200px;
+    }
+    .banar-text-1{
+        font-size: 1.1rem;
+    }
+    .banar-text-2{
+     font-size:.8rem;
+       }
+
+       .ios-app{
+        margin-right:0;
+        width: 120px;
+    }
+    .play-app{
+        margin-right:0;
+        width: 120px;
+    }
+    .mobile-banar{
+        margin-top:20px;
+        margin-left:80px;
+        margin-right:0;
+        height: 340px;
+    }
+    .app-textaria{
+        margin-top:0;
+        margin-right:0;
+    }
+}
+//  end black poster section
+// start 6 card section 
+
+.six-card-container{
+    height: 600px;
+    width: 100%;
+    margin-top:80px;
+}
+.main-left-right-container{
+    height:600px;
+    width: 100%;
+    display: flex;
+    margin-top:50px;
+}
+.left-continer{
+    height: 450px;
+    width: 50%;
+    margin-left:30px;
+}
+.right-container{
+    height: 350px;
+    width: 50%;
+}
+.online-bapsa{
+    height: 200px;
+}
+.six-img{
+    height: 110px;
+    width: 100px;
+}
+.busness-text{
+    margin-left:8px;
+}
+.bisness-card{
+    height: 200px;
+    width: 180px;
+    border:1px solid rgba(0, 0, 0, 0.233);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.5s;
+}
+.bisness-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .busness-text{
+        color:#E2136E;
+    }
+}
+.busness-text{
+   transition:.5s;
+}
+.six-poster{
+    margin-left:20px;
+}
+@media screen and (max-width:558px) {
+    .main-left-right-container{
+       flex-direction: column;
+    }
+    .six-poster{
+        margin-left:0;
+        width: 100%;
+        height: 230px;
+        margin-top:200px;
+    }
+    .left-continer{
+        width: 100%;
+        margin-left:0;
+    }
+    .right-container{
+        width: 98%;
+    }
+
+    .bisness-card{
+        height: 200px;
+        width: 135px;
+    }
+    .online-bapsa{
+        height: 200px;
+        margin-bottom:20px;
+    }
+}
+// end 6 card container
+// start notun ki asa bkash e 
+.m-news-card{
+    width: 400px;
+    height: 420px;
+    transition:.5s;
+}
+.m-news-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .card-title{
+        color:#E2136E;
+    }
+}
+.nwes-date{
+    font-size:.6rem;
+}
+.news-date-1{
+    margin-top:23px;
+}
+.notun-ki-m-titel{
+    text-align: center;
+    font-weight:bold;
+    margin-top:150px;
+}
+.news-cards-all{
+    margin-top:50px;
+}
+.sob-dakhun-btn{
+    display: flex;
+    justify-content:center;
+    margin-top:50px;
+}
+.sob-dakhun-btn-m{
+    padding:10px 60px;
+    border-radius:20px;
+    background-color: #ffffff;
+    border:1px solid #E2136E;
+    transition:.5s;
+}
+.sob-dakhun-btn-m:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width:678px) {
+    .notun-ki-asa-container{
+        margin-top:550px;
+        width: 100%;
+    }
+    
+    .news-cards-all{
+        flex-direction:column;
+        margin-top:10px;
+    }
+    .news-card-1{
+        width: 100%;
+    }
+    .m-news-card{
+        width: 95%;
+        margin-bottom:20px;
+        margin-left:10px;
+        height:380px;
+    }
+    .notun-ki-m-titel{
+        font-size:1.1rem;
+    }
+}
+// end bkash news card section
+// start bkash point section
+.bkash-point-m-heading{
+    margin-top:120px;
+}
+.bkash-point-container{
+    height:700px;
+    width: 100%;
+    margin-top:50px;
+}
+.bkash-point-card{
+    height: 263px;
+    width: 515px;
+    border:1px solid #0000002c;
+    margin-left:40px;
+    transition:.5s;
+}
+.point-m-image{
+    height: 150px;
+    width: 300px;
+}
+.point-image{
+    display:flex;
+    justify-content:center;
+}
+.bkash-point-wraper{
+    height: 250px;
+}
+.bkash-point-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .point-m-text{
+        color:#E2136E;
+    }
+}
+.point-m-text{
+   transition:.5s;
+}
+@media screen and (max-width:678px) {
+    .bkash-point-container{
+        width: 100%;
+        height: max-content;
+    }
+    .bkash-point-card{
+        width: 95%;
+        margin-left:15px;
+        margin-top:0;
+    }
+    .bkash-point-wraper{
+        margin-bottom:30px;
+    }
+    .bkash-point-m-heading{
+        margin-top:0;
+    }
+}
+// end point section 
+// start bkash offer section 
+.m-offer-container{
+    width: 100%;
+    background-image: linear-gradient(rgb(255, 221, 244), rgb(255, 255, 255));
+    height:140vh;
+}
+.offer-container-main{
+    height: 600px;
+    margin-top: 11px;
+    width: 100%;
+    }
+.offer-left{
+    height: 730px;
+    margin-top:100px;
+}
+.offer-right{
+    height: 600px;
+    margin-top:100px;
+}
+.offer-left-text-container{
+    margin-top:350px;
+}
+.offer-para{
+    font-size: .8rem;
+}
+.offer-left-btn{
+    padding:10px 55px;
+    background-color: #fff;
+    border:1px solid #ff0471;
+    border-radius:20px;
+}
+// end left 
+// hover aria start
+.offer-card-bottom:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .resort-offer-text{
+        color:#E2136E;
+    }
+}
+.offer-card-bottom{
+   transition:.5s;
+}
+.resort-offer-text{
+    transition:.5s;
+}
+.top-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .resort-offer-text{
+        color:#E2136E;
+    }
+}
+.top-card{
+  transition:.5s;
+}
+.offer-left-btn:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+.offer-left-btn{
+    transition:.5s;
+}
+// hover aria end
+// start right
+.offer-top{
+    height: 380px;
+}
+.offer-bidyo{
+    height:283px;
+}
+.offer-bottom{
+    height: 380px;
+}
+.top-card{
+    height: 355px;
+    width: 102%;
+}
+.bidyut-text-2{
+    font-size:.8rem;
+    font-weight: normal;
+}
+.offer-card-bottom{
+    width: 380px;
+}
+.hotel-image{
+    height: 280px;
+}
+.hotel-text-2{
+    font-size: .8rem;
+    font-weight: normal;
+}
+@media screen and (max-width:678px) {
+    .m-offer-container{
+        height:80rem;
+    }
+   
+    .offer-container-main{
+        height: 800px;
+    }
+    .offer-left-text-container{
+        margin-top:0;
+        margin-left:10px;
+        width: 100%;
+    }
+    .offer-left{
+        height: 100px;
+    }
+    .offer-card-bottom{
+        width: 100%;
+        height: 350px;
+        margin-left:15px;
+    }
+    .offer-heading{
+        font-size:1.3rem;
+    }
+    .offer-left-btn{
+        padding:8px 35px;
+    }
+    .offer-bidyo{
+        height:170px;
+    }
+    .top-card{
+        height: 250px;
+        width: 100%;
+        margin-left:15px;
+    }
+    .offer-top{
+        height: 280px;
+    }
+    .offer-2-poster{
+        width: 100%;
+    }
+}
+// security main section start
+.security-heading-container{
+    margin-top:60px;
+}
+.security-main-container{
+    height: 700px;
+    width: 100%;
+    margin-top:100px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 232, 243));
+    display:grid;
+    grid-template-columns:repeat(3, 0.4fr);
+    justify-content: center;
+}
+.text-container-1{
+    width: 300px;
+}
+.text-container-1:nth-child(3){
+    grid-column:2/3;
+    grid-row:1/3;
+    width: 250px;
+}
+.text-container-1:nth-child(1){
+   justify-self: end;
+}
+.text-container-1:nth-child(3){
+   justify-self: center;
+}
+.text-container-1:nth-child(4){
+   justify-self: end;
+}
+
+.mobile-caro-imag{
+    height: 580px;
+    width: 250px;
+}
+.mobile-titel{
+    color:#E2136E;
+    font-weight: bold;
+}
+.text-container-1 .carousel-indicators button{
+    height:25px;
+    width: 25px;
+    border-radius:50%;
+    background-color:var(--bkash-defold-color);
+}
+.text-container-1 .carousel-indicators{
+   display: flex;
+   justify-content: space-between;
+}
+.carousel-indicators .active{
+    color:black;
+    opacity: 1;
+}
+.mobile-titel{
+    font-size: 1.9rem;
+    line-height: 2.9rem;
+}
+.varification-text{
+    font-size: 1.2rem;
+}
+@media screen and (max-width:768px) {
+    .text-container-1:nth-child(3){
+        grid-column:2/4;
+        grid-row:1/5;
+        width: 80%;
+    }
+    .mobile-caro-imag{
+        height: 400px;
+        width: 100%;
+        margin-right:0;
+        margin-top:180px;
+    }
+    .security-main-container{
+        height: 700px;
+        width: 100%;
+      
+    }
+    .text-container-1{
+       width: 100%;
+       margin-left: 10px;
+    }
+
+    .main-carosel-mobile{
+        width:100%;
+    }
+    .text-container-1:nth-child(1){
+        justify-self: center;
+     }
+     .text-container-1:nth-child(3){
+        justify-self: center;
+     }
+     .text-container-1:nth-child(4){
+        justify-self: center;
+     }
+     .mobile-titel{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .varification-text{
+        font-size: .8rem;
+    }
+}
+// end security section
+// start footer container
+.main-foot-container{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(65, 65, 65);
+}
+.main-foot{
+    height: 300px;
+    width: 100%;
+    display:flex;
+}
+.foot-left{
+    height: 300px;
+    width: 40%;
+    margin-left:30px;
+    margin-top:20px;
+}
+.foot-right{
+    height: 320px;
+    width: 54%;
+}
+.foot-image-logo-1{
+    height:70px;
+    width:140px;
+}
+.foot-text{
+    color:#fff;
+    font-size: .9rem;
+}
+.foot-doumlode-ops{
+    display:flex;
+}
+.app-and-play{
+    height: 50px;
+    width: 150px;
+}
+.app-right{
+    margin-left:10px;
+}
+.bkash-foot-app-doundode{
+    margin-top:30px;
+}
+// end left footer
+// start right footer
+.foot-right{
+    display:flex;
+    justify-content:center;
+    margin-left:40px;
+}
+.right-list-1{
+    width: 24%;
+    height:200px;
+    margin-top:50px;
+}
+.right-list-1 ul li{
+    display: block;
+    color:#fff;
+    margin-top:10px;
+}
+.right-list-1 ul li:hover{
+    color:#c2c2c2;
+}
+.right-list-1 h5{
+    margin-left:35px;
+    color:#fff;
+}
+.foot-bottm-line{
+    color: #fff;
+  }
+  
+  .copyright-line {
+    color: #ffffff;
+    margin-left: 40px;
+    font-size: 13px;
+  }
+//   foot last container
+.last-foot-botom-container{
+   height: 60px;
+   width: 100%;
+   display:flex;
+   justify-content: space-between;
+}
+.platform-icon{
+    width:300px;
+    display:flex;
+    justify-content: space-evenly;
+}
+.icon-1{
+    background-color: #fff;
+    height:32px;
+    width: 32px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+  @media screen and (max-width:983px) {
+    .main-foot-container{
+        height: max-content;
+        width: 100%;
+    }
+    .main-foot{
+        height: max-content;
+        width: 100%;
+        flex-direction: column;
+    }
+  }
+  @media screen and (max-width:515px) {
+    .main-foot-container{
+        height: max-content;
+        width: 100%;
+    }
+    .main-foot{
+        height: max-content;
+        width: 90%;
+        flex-direction: column;
+    }
+    .right-list-1{
+        width: 50%;
+        height:122px;
+        margin-top:50px;
+    }
+    .right-list-1 ul li{
+       font-size: .85rem;
+    }
+    .foot-left{
+        width: 100%;
+    }
+    .foot-right{
+        height: max-content;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left:0;
+    }
+    .foot-doumlode-ops{
+      flex-direction: column;
+    }
+    .foot-bottm{
+        height: 100px;
+        width: 100%;
+    }
+     .copyright-line{
+       margin-left:72px;
+    }
+    .last-foot-botom-container{
+        height:max-content;
+        width: 100%;
+        flex-direction: column;
+     }
+     .platform-icon{
+        margin-left:10px;
+     }
+    //  playstore
+    .play-store-foot{
+      margin-left:40px;
+      margin-bottom:10px;
+    }
+    .app-stor-foot{
+        margin-left:35px;
+    }
+  }
